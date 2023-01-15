@@ -182,4 +182,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputFirstName" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_baseline_info"
+        tools:layout_editor_absoluteX="371dp"
+        tools:layout_editor_absoluteY="451dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_baseline_info"
+        tools:layout_editor_absoluteX="371dp"
+        tools:layout_editor_absoluteY="517dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
