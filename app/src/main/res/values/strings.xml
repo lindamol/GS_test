@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Garage Sale</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="welcome_to_garage_sale">Welcome to Garage Sale</string>
+    <string name="email">Email</string>
+    <string name="register">Register</string>
+    <string name="re_enter_password">Re_Enter Password</string>
+    <string name="have_an_account_login">Have an account? Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="btnregister">Register</string>
+</resources>
