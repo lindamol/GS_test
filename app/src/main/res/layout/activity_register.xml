@@ -14,7 +14,7 @@
         android:id="@+id/tVRegister"
         android:layout_width="146dp"
         android:layout_height="59dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="16dp"
         android:text="@string/register"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,7 +51,7 @@
         android:background="@drawable/border_line"
         android:backgroundTint="@color/White"
         android:drawableLeft="@drawable/ic_security"
-        android:drawableRight="@drawable/ic_baseline_visibility_off"
+        android:drawableRight="@drawable/ic_visibility_off"
         android:drawablePadding="8sp"
         android:ems="10"
         android:hint="@string/password"
@@ -71,6 +71,7 @@
         android:text="@string/have_an_account_login"
         android:textColor="@color/Black"
         android:textStyle="bold"
+        android:onClick="Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
@@ -86,7 +87,7 @@
         android:background="@drawable/border_line"
         android:backgroundTint="@color/White"
         android:drawableLeft="@drawable/ic_security"
-        android:drawableRight="@drawable/ic_baseline_visibility_off"
+        android:drawableRight="@drawable/ic_visibility_off"
         android:drawablePadding="8sp"
         android:ems="10"
         android:hint="@string/re_enter_password"
@@ -102,7 +103,7 @@
 
     <Button
         android:id="@+id/btnRegister"
-        android:layout_width="171dp"
+        android:layout_width="145dp"
         android:layout_height="48dp"
         android:background="@drawable/border_line"
         android:backgroundTint="@color/White"
@@ -137,14 +138,13 @@
         android:id="@+id/tVRegisterWelcoming"
         android:layout_width="229dp"
         android:layout_height="43dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:autoSizeMinTextSize="30sp"
         android:gravity="center"
         android:text="@string/welcome_to_garage_sale"
         android:textColor="@color/Black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tVRegister" />
 
@@ -186,24 +186,20 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_baseline_info"
-        tools:layout_editor_absoluteX="371dp"
-        tools:layout_editor_absoluteY="451dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/inputPasswordRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inputPasswordRegister"
+        app:layout_constraintTop_toTopOf="@+id/inputPasswordRegister"
+        app:srcCompat="@drawable/ic_info" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_baseline_info"
-        tools:layout_editor_absoluteX="371dp"
-        tools:layout_editor_absoluteY="517dp" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_location_on"
-        tools:layout_editor_absoluteX="193dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/inputReEnterPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inputReEnterPassword"
+        app:layout_constraintTop_toTopOf="@+id/inputReEnterPassword"
+        app:srcCompat="@drawable/ic_info" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
