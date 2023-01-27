@@ -38,9 +38,8 @@
         android:inputType="textPersonName"
         android:paddingLeft="10sp"
         android:textColor="@color/Black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.519"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/inputLastName"
+        app:layout_constraintStart_toStartOf="@+id/inputLastName"
         app:layout_constraintTop_toBottomOf="@+id/inputLastName" />
 
     <EditText
@@ -58,13 +57,12 @@
         android:paddingLeft="10sp"
         android:paddingEnd="10sp"
         android:textColor="@color/Black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.52"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/inputEmailRegister"
+        app:layout_constraintStart_toStartOf="@+id/inputEmailRegister"
         app:layout_constraintTop_toBottomOf="@+id/inputEmailRegister" />
 
     <TextView
-        android:id="@+id/tVHaveAnAccount"
+        android:id="@+id/tvLogin"
         android:layout_width="173dp"
         android:layout_height="43dp"
         android:gravity="center"
@@ -94,27 +92,22 @@
         android:paddingLeft="10sp"
         android:paddingRight="10sp"
         android:textColor="@color/Black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputPasswordRegister"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintEnd_toEndOf="@+id/inputPasswordRegister"
+        app:layout_constraintStart_toStartOf="@+id/inputPasswordRegister"
+        app:layout_constraintTop_toBottomOf="@+id/inputPasswordRegister" />
 
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="145dp"
         android:layout_height="48dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/border_line"
         android:backgroundTint="@color/White"
         android:text="@string/register"
         android:textColor="@color/Black"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputReEnterPassword"
-        app:layout_constraintVertical_bias="0.208" />
+        app:layout_constraintTop_toBottomOf="@+id/inputReEnterPassword" />
 
     <EditText
         android:id="@+id/inputEmailRegister"
@@ -129,9 +122,8 @@
         android:hint="@string/email"
         android:paddingLeft="10sp"
         android:textColor="@color/Black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/inputUserName"
+        app:layout_constraintStart_toStartOf="@+id/inputUserName"
         app:layout_constraintTop_toBottomOf="@+id/inputUserName" />
 
     <TextView
@@ -160,10 +152,9 @@
         android:inputType="textPersonName"
         android:paddingLeft="15sp"
         android:textColor="@color/Black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tVRegisterWelcoming"
-        />
+        app:layout_constraintEnd_toEndOf="@+id/tVRegisterWelcoming"
+        app:layout_constraintStart_toStartOf="@+id/tVRegisterWelcoming"
+        app:layout_constraintTop_toBottomOf="@+id/tVRegisterWelcoming" />
 
     <EditText
         android:id="@+id/inputLastName"
@@ -177,9 +168,8 @@
         android:inputType="textPersonName"
         android:paddingLeft="15sp"
         android:textColor="@color/Black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/inputFirstName"
+        app:layout_constraintStart_toStartOf="@+id/inputFirstName"
         app:layout_constraintTop_toBottomOf="@+id/inputFirstName" />
 
     <ImageView

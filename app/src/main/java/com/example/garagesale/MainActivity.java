@@ -16,12 +16,11 @@ public class MainActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_main);
 
        welcome = findViewById(R.id.welcom1);
-
     }
-
 
     public void welcometoGS(View view){
         Intent loginActivityIntent = new Intent(this, LoginActivity.class);
         startActivity(loginActivityIntent);
+        //or just write---> startActivity(new Intent(this, LoginActivity.class));
     }
 }

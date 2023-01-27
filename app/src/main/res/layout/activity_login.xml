@@ -33,12 +33,30 @@
         android:ems="10"
         android:hint="Email Address/Username"
         android:inputType="textPersonName"
+        android:onClick="EmailLogin"
         android:paddingLeft="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tVLoginWelcoming"
         tools:textColorHint="@color/SlateGray" />
+
+    <TextView
+        android:id="@+id/tVemailError"
+        android:layout_width="250dp"
+        android:layout_height="22dp"
+        android:text="Please enter Email Address"
+        android:textColor="@color/DarkRed"
+        android:visibility="visible"
+
+        app:layout_constraintBottom_toTopOf="@+id/inputPasswordLogin"
+        app:layout_constraintEnd_toEndOf="@+id/inputEmailLogin"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="@+id/inputEmailLogin"
+        app:layout_constraintTop_toBottomOf="@+id/inputEmailLogin"
+        app:layout_constraintVertical_bias="0.0">
+
+    </TextView>
 
     <EditText
         android:id="@+id/inputPasswordLogin"
@@ -58,6 +76,22 @@
         app:layout_constraintStart_toStartOf="@+id/inputEmailLogin"
         app:layout_constraintTop_toBottomOf="@+id/inputEmailLogin"
         tools:textColorHint="@color/SlateGray" />
+
+    <TextView
+        android:id="@+id/tVPasswordError"
+        android:layout_width="247dp"
+        android:layout_height="21dp"
+        android:text="Please enter Password"
+        android:textColor="@color/DarkRed"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btnLOGIN"
+        app:layout_constraintEnd_toEndOf="@+id/inputPasswordLogin"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="@+id/inputPasswordLogin"
+        app:layout_constraintTop_toBottomOf="@+id/inputPasswordLogin"
+        app:layout_constraintVertical_bias="0.0">
+
+    </TextView>
 
     <Button
         android:id="@+id/btnLOGIN"
