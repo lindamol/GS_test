@@ -47,8 +47,8 @@
         android:layout_height="22dp"
         android:text="Please enter Email Address"
         android:textColor="@color/DarkRed"
-        android:visibility="visible"
 
+        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/inputPasswordLogin"
         app:layout_constraintEnd_toEndOf="@+id/inputEmailLogin"
         app:layout_constraintHorizontal_bias="0.149"

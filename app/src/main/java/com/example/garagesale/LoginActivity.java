@@ -38,3 +38,24 @@ public class LoginActivity extends AppCompatActivity {
     public void EmailLogin(View view) {
     }
 }
+//To Validat the email address.
+//So some of the email addresses that will be valid via this email validation technique are:
+//
+//username@domain.com
+//user.name@domain.com
+//user-name@domain.com
+//username@domain.co.in
+//user_name@domain.com
+//Here's a shortlist of some email addresses that will be invalid via this email validation:
+//
+//username.@domain.com
+//.user.name@domain.com
+//user-name@domain.com.
+//username@.com
+//  @Test
+//    public void testUsingStrictRegex() {
+//        emailAddress = "username@domain.com";
+//        regexPattern = "^(?=.{1,64}@)[A-Za-z0-9_-]+(\\.[A-Za-z0-9_-]+)*@"
+//            + "[^-][A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)*(\\.[A-Za-z]{2,})$";
+//        assertTrue(EmailValidation.patternMatches(emailAddress, regexPattern));
+//    }
